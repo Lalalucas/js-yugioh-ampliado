@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Metadados essenciais -->
   <meta charset="UTF-8">
-  <title>Yu-Gi-Oh! Ampliado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogo Yu-Gi-Oh! Versão Ampliada com JavaScript, HTML5 e CSS3 – Estrutura modular, interativa e responsiva.">
+  <meta name="author" content="Lucas Gabriel de Morais">
+  <meta name="keywords" content="Yu-Gi-Oh, DIO, JavaScript, HTML5, CSS3, Game, Card Game, Front-End, Projeto, Modular, Responsivo">
+
+  <!-- Título e favicon -->
+  <title>🃏 Yu-Gi-Oh! - Versão Ampliada</title>
+  <link rel="icon" type="image/png" href="src/assets/images/favicon.png">
+
+  <!-- Estilo principal -->
   <link rel="stylesheet" href="src/assets/css/style.css">
+
+  <!-- Pré-carregamento para performance -->
+  <link rel="preload" href="src/assets/css/style.css" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fontes personalizadas (exemplo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <!-- SEO e Acessibilidade -->
+  <meta name="theme-color" content="#111">
 </head>
+
 <body>
-  <h1>Yu-Gi-Oh! - Versão Ampliada</h1>
-  <div id="game"></div>
-  <script src="src/assets/js/script.js"></script>
+  <header>
+    <h1 class="game-title">Yu-Gi-Oh! - Versão Ampliada</h1>
+    <p class="subtitle">💥 Inspirado no clássico – agora com estrutura profissional, responsiva e dinâmica.</p>
+  </header>
+
+  <main id="game" aria-label="Área do jogo">
+    <!-- As cartas serão geradas dinamicamente via JS -->
+  </main>
+
+  <section id="status" aria-live="polite">
+    <p><strong>Movimentos:</strong> <span id="moves">0</span></p>
+    <p><strong>Tempo:</strong> <span id="timer">00:00</span></p>
+  </section>
+
+  <footer>
+    <p>Desenvolvido por <a href="https://github.com/Lalalucas" target="_blank">Lucas Gabriel de Morais</a> • 
+       <a href="https://linkedin.com/in/lucasgdm" target="_blank">LinkedIn</a> • 
+       <a href="mailto:lucasescobarmorais@gmail.com">Contato</a></p>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="src/assets/js/script.js" defer></script>
+
+  <!-- Scripts futuros podem ser inseridos aqui -->
 </body>
 </html>
